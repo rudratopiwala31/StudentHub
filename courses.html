@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Courses | Student Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f8;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#0d6efd,#4f9dfc);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Navigation */
+
+nav{
+    background:#0b5ed7;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:18px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffe600;
+}
+
+/* Section */
+
+.section-title{
+    text-align:center;
+    margin:50px 20px 20px;
+}
+
+.section-title h2{
+    color:#1d3557;
+    font-size:35px;
+}
+
+.section-title p{
+    color:#555;
+    margin-top:10px;
+}
+
+/* Cards */
+
+.container{
+
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.top{
+
+    padding:35px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.web{
+    background:#0d6efd;
+}
+
+.java{
+    background:#ff9800;
+}
+
+.python{
+    background:#28a745;
+}
+
+.dbms{
+    background:#8e44ad;
+}
+
+.os{
+    background:#16a085;
+}
+
+.ds{
+    background:#e74c3c;
+}
+
+.top h1{
+
+    font-size:55px;
+
+}
+
+.top h2{
+
+    margin-top:15px;
+
+}
+
+.content{
+
+    padding:25px;
+
+}
+
+.content p{
+
+    color:#555;
+
+    line-height:24px;
+
+    margin-bottom:20px;
+
+}
+
+.details{
+
+    margin-bottom:20px;
+
+}
+
+.details p{
+
+    margin:8px 0;
+
+    color:#444;
+
+}
+
+/* Progress */
+
+.progress{
+
+    background:#ddd;
+
+    height:10px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+}
+
+.fill{
+
+    height:100%;
+
+    background:#0d6efd;
+
+    width:70%;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#0d6efd;
+
+    color:white;
+
+    font-size:16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#084db5;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+    margin-top:50px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📚 Student Hub Courses</h1>
+
+<p>Explore professional courses and enhance your skills.</p>
+
+</header>
+
+<nav>
+
+<a href="studenthub.html">Dashboard</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="assignments.html">Assignments</a>
+
+<a href="notes.html">Notes</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="section-title">
+
+<h2>Available Courses</h2>
+
+<p>Select a course and start learning today.</p>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<div class="top web">
+
+<h1>🌐</h1>
+
+<h2>Web Development</h2>
+
+</div>
+
+<div class="content">
+
+<p>Learn HTML, CSS and JavaScript to build responsive and modern websites.</p>
+
+<div class="details">
+
+<p><b>Duration:</b> 12 Weeks</p>
+
+<p><b>Level:</b> Beginner</p>
+
+<p><b>Instructor:</b> Prof. Rahul Shah</p>
+
+</div>
+
+<div class="progress">
+
+<div class="fill"></div>
+
+</div>
+
+<button>View Course</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top java">
+
+<h1>☕</h1>
+
+<h2>Java Programming</h2>
+
+</div>
+
+<div class="content">
+
+<p>Master Java fundamentals, OOP concepts and application development.</p>
+
+<div class="details">
+
+<p><b>Duration:</b> 10 Weeks</p>
+
+<p><b>Level:</b> Intermediate</p>
+
+<p><b>Instructor:</b> Prof. Neha Patel</p>
+
+</div>
+
+<div class="progress">
+
+<div class="fill" style="width:60%; background:#ff9800;"></div>
+
+</div>
+
+<button>View Course</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top python">
+
+<h1>🐍</h1>
+
+<h2>Python Programming</h2>
+
+</div>
+
+<div class="content">
+
+<p>Learn Python programming for automation, AI, data science and web applications.</p>
+
+<div class="details">
+
+<p><b>Duration:</b> 14 Weeks</p>
+
+<p><b>Level:</b> Beginner</p>
+
+<p><b>Instructor:</b> Dr. Amit Joshi</p>
+
+</div>
+
+<div class="progress">
+
+<div class="fill" style="width:80%; background:#28a745;"></div>
+
+</div>
+
+<button>View Course</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top dbms">
+
+<h1>🗄️</h1>
+
+<h2>Database Management</h2>
+
+</div>
+
+<div class="content">
+
+<p>Understand SQL, ER diagrams, normalization and relational databases.</p>
+
+<div class="details">
+
+<p><b>Duration:</b> 8 Weeks</p>
+
+<p><b>Level:</b> Beginner</p>
+
+<p><b>Instructor:</b> Prof. Karan Mehta</p>
+
+</div>
+
+<div class="progress">
+
+<div class="fill" style="width:55%; background:#8e44ad;"></div>
+
+</div>
+
+<button>View Course</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top os">
+
+<h1>💻</h1>
+
+<h2>Operating Systems</h2>
+
+</div>
+
+<div class="content">
+
+<p>Study memory management, scheduling, file systems and operating system concepts.</p>
+
+<div class="details">
+
+<p><b>Duration:</b> 9 Weeks</p>
+
+<p><b>Level:</b> Intermediate</p>
+
+<p><b>Instructor:</b> Dr. Rakesh Kumar</p>
+
+</div>
+
+<div class="progress">
+
+<div class="fill" style="width:45%; background:#16a085;"></div>
+
+</div>
+
+<button>View Course</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="top ds">
+
+<h1>📊</h1>
+
+<h2>Data Structures</h2>
+
+</div>
+
+<div class="content">
+
+<p>Learn arrays, linked lists, stacks, queues, trees, graphs and algorithms.</p>
+
+<div class="details">
+
+<p><b>Duration:</b> 15 Weeks</p>
+
+<p><b>Level:</b> Intermediate</p>
+
+<p><b>Instructor:</b> Prof. Priya Desai</p>
+
+</div>
+
+<div class="progress">
+
+<div class="fill" style="width:75%; background:#e74c3c;"></div>
+
+</div>
+
+<button>View Course</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Student Hub | Learn. Practice. Achieve.</p>
+
+</footer>
+
+</body>
+</html>

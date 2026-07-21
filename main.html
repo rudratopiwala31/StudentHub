@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Hub Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7fc;
+}
+
+/* Header */
+
+header{
+    background:#007BFF;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Navigation */
+
+nav{
+    background:#0056b3;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:18px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Welcome Section */
+
+.welcome{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.welcome h2{
+    color:#333;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.welcome p{
+    color:#666;
+    font-size:18px;
+    line-height:28px;
+}
+
+/* Dashboard Cards */
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    width:270px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 0 12px rgba(0,0,0,0.2);
+    text-align:center;
+    padding:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#007BFF;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+    line-height:22px;
+}
+
+.card a{
+    text-decoration:none;
+}
+
+.card button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.card button:hover{
+    background:#0056b3;
+}
+
+/* Information Section */
+
+.info{
+    background:white;
+    width:90%;
+    margin:auto;
+    margin-bottom:40px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.info h2{
+    text-align:center;
+    color:#007BFF;
+    margin-bottom:20px;
+}
+
+.info ul{
+    margin-left:30px;
+    line-height:30px;
+    color:#555;
+}
+
+/* Footer */
+
+footer{
+    background:#007BFF;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🎓 Student Hub</h1>
+
+<p>Welcome to the Student Management System Dashboard</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="assignments.html">Assignments</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="login.html">Logout</a>
+
+</nav>
+
+<section class="welcome">
+
+<h2>Welcome Student 👋</h2>
+
+<p>
+Manage your academic activities from one place.
+Access your courses, assignments, notes, profile,
+announcements and much more through this dashboard.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h3>📚 Courses</h3>
+
+<p>
+View all available courses, study materials and learning resources.
+</p>
+
+<a href="courses.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📝 Assignments</h3>
+
+<p>
+Check assignment deadlines, submit work and monitor your progress.
+</p>
+
+<a href="assignments.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📖 Notes</h3>
+
+<p>
+Download lecture notes, PDFs and important classroom resources.
+</p>
+
+<a href="notes.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>👤 Profile</h3>
+
+<p>
+Update your personal information and manage your student account.
+</p>
+
+<a href="profile.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📢 Announcements</h3>
+
+<p>
+Stay updated with notices, upcoming events and college news.
+</p>
+
+<a href="#">
+
+<button>View</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>☎ Contact</h3>
+
+<p>
+Need help? Contact faculty members or the Student Hub support team.
+</p>
+
+<a href="contact.html">
+
+<button>Contact</button>
+
+</a>
+
+</div>
+
+</div>
+
+<section class="info">
+
+<h2>Student Dashboard Features</h2>
+
+<ul>
+
+<li>✔ Easy access to all courses.</li>
+
+<li>✔ View and submit assignments.</li>
+
+<li>✔ Download lecture notes and study materials.</li>
+
+<li>✔ Check announcements and notifications.</li>
+
+<li>✔ Manage your student profile.</li>
+
+<li>✔ Contact faculty and support team.</li>
+
+<li>✔ Simple and user-friendly interface.</li>
+
+<li>✔ Fast navigation to all pages.</li>
+
+</ul>
+
+</section>
+
+<footer>
+
+<p>© 2026 Student Hub | Student Management System | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
