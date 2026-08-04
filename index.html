@@ -1,268 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Hub | Home</title>
+    <title>Student Hub</title>
 
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
 
-body{
-    font-family:Arial, sans-serif;
-    background:#eef4ff;
-}
+            /* Keeps footer at the bottom */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-header{
-    background:#007BFF;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
+        header {
+            background-color: #1461b3fd;
+            color: #ffffff;
+            padding: 20px;
+        }
 
-header h1{
-    font-size:42px;
-}
+        nav {
+            background-color: #0056b3;
+            padding: 12px;
+        }
 
-header p{
-    margin-top:10px;
-    font-size:18px;
-}
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
 
-/* Navigation */
+        nav a:hover {
+            color: rgba(67, 187, 230, 0.747);
+        }
 
-nav{
-    background:#0056b3;
-    padding:15px;
-    text-align:center;
-}
+        /* Main content */
+        .content {
+            flex: 1;
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:20px;
-    font-size:18px;
-    font-weight:bold;
-}
+        .welcome {
+            padding: 30px;
+        }
 
-nav a:hover{
-    color:yellow;
-}
+        .box {
+            display: inline-block;
+            width: 220px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            vertical-align: top;
+            border-radius: 15px;
+        }
 
-/* Hero Section */
+        .box h3 {
+            color: #176dca;
+        }
 
-.hero{
-    padding:70px 20px;
-    text-align:center;
-}
+        .box p {
+            color: #555;
+            margin: 10px 0;
+        }
 
-.hero h2{
-    font-size:40px;
-    color:#333;
-    margin-bottom:20px;
-}
+        button {
+            background-color: #1a74d5f2;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-.hero p{
-    width:70%;
-    margin:auto;
-    color:#555;
-    line-height:28px;
-    font-size:18px;
-}
+        button:hover {
+            background-color: #0056b3;
+        }
 
-/* Buttons */
-
-.buttons{
-    margin-top:35px;
-}
-
-.buttons a{
-    text-decoration:none;
-}
-
-.btn{
-    display:inline-block;
-    background:#007BFF;
-    color:white;
-    padding:12px 28px;
-    margin:10px;
-    border-radius:6px;
-    font-size:18px;
-}
-
-.btn:hover{
-    background:#0056b3;
-}
-
-/* Feature Cards */
-
-.features{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    padding:50px;
-}
-
-.card{
-    width:280px;
-    background:white;
-    border-radius:12px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 0 12px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    color:#007BFF;
-    margin-bottom:15px;
-}
-
-.card p{
-    color:#666;
-    line-height:24px;
-}
-
-/* About Section */
-
-.about{
-    width:90%;
-    margin:auto;
-    background:white;
-    border-radius:12px;
-    padding:35px;
-    box-shadow:0 0 12px rgba(0,0,0,0.15);
-    margin-bottom:40px;
-}
-
-.about h2{
-    color:#007BFF;
-    text-align:center;
-    margin-bottom:20px;
-}
-
-.about p{
-    color:#555;
-    text-align:center;
-    line-height:28px;
-    font-size:17px;
-}
-
-/* Footer */
-
-footer{
-    background:#007BFF;
-    color:white;
-    text-align:center;
-    padding:18px;
-}
-
-</style>
-
+        footer {
+            background-color: #1461b3fd;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 40px; /* Extra gap above footer */
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
+    <header>
+        <h1>📚 Student Hub</h1>
+        <p>Welcome to Your Learning Portal</p>
+    </header>
 
-<h1>🎓 Student Hub</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="about.html">Contact Us</a>
+        <a href="profile.html">Profile</a>
+    </nav>
 
-<p>Your Smart Student Management System</p>
+    <div class="content">
 
-</header>
+        <div class="welcome">
+            <h2>Welcome Student!</h2>
+            <p>Access all your academic information from one place.</p>
+        </div>
 
-<nav>
+        <div class="box">
+            <h3>Courses</h3>
+            <p>View all your enrolled courses here.</p>
+            <button onclick="location.href='courses.html'">Open</button>
+        </div>
 
-<a href="main.html">Home</a>
-<a href="about.html">About</a>
-<a href="login.html">Login</a>
-<a href="register.html">Register</a>
+        <div class="box">
+            <h3>Assignments</h3>
+            <p>Check your pending assignments.</p>
+            <button onclick="location.href='assignment.html'">Open</button>
+        </div>
 
-</nav>
+        <div class="box">
+            <h3>Study Materials</h3>
+            <p>Download notes and PDFs.</p>
+            <button onclick="location.href='notes.html'">Open</button>
+        </div>
 
-<section class="hero">
+    </div>
 
-<h2>Welcome to Student Hub</h2>
-
-<p>
-Student Hub is a simple and user-friendly Student Management System
-designed to help students organize their academic journey.
-Access your courses, assignments, announcements, profile, and other
-important information through one secure platform.
-</p>
-
-<div class="buttons">
-
-<a href="register.html" class="btn">Get Started</a>
-
-<a href="login.html" class="btn">Login</a>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<div class="card">
-
-<h3>📚 Courses</h3>
-
-<p>
-Explore available courses and enhance your learning with structured content.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📝 Assignments</h3>
-
-<p>
-Track assignments, due dates, and submissions in one place.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>👤 Student Dashboard</h3>
-
-<p>
-Manage your profile and access all academic resources after login.
-</p>
-
-</div>
-
-</section>
-
-<section class="about">
-
-<h2>Why Student Hub?</h2>
-
-<p>
-Student Hub makes academic management easier by providing a centralized
-platform for students. It offers quick navigation, a clean interface,
-and easy access to courses, assignments, announcements, and personal
-information, making the learning experience more organized and efficient.
-</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Student Hub | Student Management System | All Rights Reserved</p>
-
-</footer>
+    <footer>
+        <p>&copy; 2026 Student Hub | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
