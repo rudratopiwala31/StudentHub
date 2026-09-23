@@ -1,80 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Student Hub - Login</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            background:white;
-        }
-
-        .login{
-            width:300px;
-            border:1px solid #ccc;
-            padding:20px;
-            text-align:center;
-            border-radius:10px;
-        }
-
-        h2{
-            color:#1461b3;
-        }
-
-        input{
-            width:90%;
-            padding:10px;
-            margin:10px 0;
-        }
-
-        button{
-            width:95%;
-            padding:10px;
-            background:#1461b3;
-            color:white;
-            border:none;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#0056b3;
-        }
-
-        a{
-            text-decoration:none;
-            color:#1461b3;
-        }
-    </style>
+    <title>StudentHub - Login</title>
+    <link rel="stylesheet" href="style1.css">
+   
 </head>
 
-<body>
+<body class="login-page">
 
-<div class="login">
+    <div class="box">
 
-    <h2>Student Hub</h2>
+        <h1>🎓 StudentHub</h1>
 
-    <form action="main.html">
+        <p>Login to Your Student Account</p>
 
-        <input type="text" placeholder="Username" required>
+        <form action="main.html">
 
-        <input type="password" placeholder="Password" required>
+            <input
+                type="text"
+                placeholder=" Enter Username"
+                required>
 
-        <button type="submit">Login</button>
+            <br>
 
-    </form>
+            <input
+                type="password"
+                placeholder=" Enter Password"
+                required>
 
-    <br>
+            <br>
 
-    <p>Don't have an account?</p>
+            <input
+                type="submit"
+                value=" Login">
 
-    <a href="register.html">Register Here</a>
+        </form>
 
-</div>
+        <p>
+
+            Don't have an account?
+
+            <a href="register.html">
+
+                Register Here
+
+            </a>
+
+        </p>
+
+    </div>
 
 </body>
+
 </html>

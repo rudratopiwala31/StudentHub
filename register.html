@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Register</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-     text-align: center;
-    }
-</style>
+
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="style1.css">
+
 </head>
-<body>
-    <h1>Register</h1>
-    <form action="main.html" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Register">
-    </form>
-    </body>
+
+    <body class="register-page">
+
+    <div class="box">
+
+        <h1>🎓 StudentHub</h1>
+
+        <p>Create Your Student Account </p>
+
+        <form action="main.html">
+
+            <input
+                type="text"
+                placeholder=" Enter Username"
+                required>
+
+            <br>
+
+            <input
+                type="email"
+                placeholder=" Enter Email"
+                required>
+
+            <br>
+
+            <input
+                type="password"
+                placeholder=" Enter Password"
+                required>
+
+            <br>
+
+            <input
+                type="password"
+                placeholder=" Confirm Password"
+                required>
+
+            <br>
+
+            <input
+                type="submit"
+                value=" Register">
+
+        </form>
+
+        <p>
+
+            Already have an account?
+
+            <a href="login.html">
+
+                 Login Here
+
+            </a>
+
+        </p>
+
+    </div>
+
+</body>
+
 </html>

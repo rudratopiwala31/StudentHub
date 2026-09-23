@@ -1,146 +1,97 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Student Hub</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>StudentHub Home</title>
+    <link rel="stylesheet" href="style1.css">
+   
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-
-            /* Keeps footer at the bottom */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background-color: #1461b3fd;
-            color: #ffffff;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #0056b3;
-            padding: 12px;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            color: rgba(67, 187, 230, 0.747);
-        }
-
-        /* Main content */
-        .content {
-            flex: 1;
-        }
-
-        .welcome {
-            padding: 30px;
-        }
-
-        .box {
-            display: inline-block;
-            width: 220px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 15px;
-            text-align: center;
-            vertical-align: top;
-            border-radius: 15px;
-        }
-
-        .box h3 {
-            color: #176dca;
-        }
-
-        .box p {
-            color: #555;
-            margin: 10px 0;
-        }
-
-        button {
-            background-color: #1a74d5f2;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            background-color: #1461b3fd;
-            color: #ffffff;
-            padding: 15px;
-            margin-top: 40px; /* Extra gap above footer */
-        }
-    </style>
 </head>
 
-<body>
+<body class="home-page">
 
     <header>
-        <h1>📚 Student Hub</h1>
-        <p>Welcome to Your Learning Portal</p>
+
+        <h1>🎓 StudentHub</h1>
+
+        <p>Student Management System</p>
+
     </header>
 
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="assignment.html">Assignments</a>
-        <a href="about.html">Contact Us</a>
-        <a href="profile.html">Profile</a>
+
+        <a href="main.html">Home</a>
+
+        <a href="about.html">About</a>
+
     </nav>
 
-    <div class="content">
 
-        <div class="welcome">
-            <h2>Welcome Student!</h2>
-            <p>Access all your academic information from one place.</p>
-        </div>
+    <div class="box">
 
-        <div class="box">
-            <h3>Courses</h3>
-            <p>View all your enrolled courses here.</p>
-            <button onclick="location.href='courses.html'">Open</button>
-        </div>
+        <h2>👋 Welcome to StudentHub</h2>
 
-        <div class="box">
-            <h3>Assignments</h3>
-            <p>Check your pending assignments.</p>
-            <button onclick="location.href='assignment.html'">Open</button>
-        </div>
+        <p>
+            StudentHub helps students manage courses, assignments,
+            notes and profile in one place.
+        </p>
 
-        <div class="box">
-            <h3>Study Materials</h3>
-            <p>Download notes and PDFs.</p>
-            <button onclick="location.href='notes.html'">Open</button>
-        </div>
+        <a href="register.html">
+            <button>Get Started</button>
+        </a>
+
+        <a href="login.html">
+            <button>Login</button>
+        </a>
 
     </div>
 
+
+    <div class="box">
+
+        <h2>📚 Features</h2>
+
+        <ul>
+
+            <li>View Courses</li>
+
+            <li>Submit Assignments</li>
+
+            <li>Download Notes</li>
+
+            <li>Manage Profile</li>
+
+            <li>Check Announcements</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="box">
+
+        <h2>ℹ About StudentHub</h2>
+
+        <p>
+            StudentHub is a simple Student Management System that
+            allows students to access their academic information
+            from one place. It is easy to use and helps students
+            stay organized.
+        </p>
+
+    </div>
+
+
     <footer>
-        <p>&copy; 2026 Student Hub | All Rights Reserved</p>
+
+        <p>© 2026 StudentHub</p>
+
     </footer>
 
 </body>
+
 </html>
+
