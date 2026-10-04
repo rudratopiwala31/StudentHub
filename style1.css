@@ -49,7 +49,7 @@
 }
 
 .home-page .box:hover {
-    background-color: #f0f8ff;
+    background-color: rgb(5, 171, 226);
 }
 
 .home-page ul {
@@ -109,6 +109,10 @@
     border-radius: 10px;
 }
 
+.login-page .box:hover {
+    background-color: rgb(5, 171, 226);
+}
+
 .login-page h1 {
     color: blue;
 }
@@ -161,6 +165,10 @@
     padding: 20px;
     border: 1px;
     border-radius: 10px;
+}
+
+.register-page .box:hover {
+    background-color: rgb(5, 171, 226);
 }
 
 .register-page h1 {
@@ -270,7 +278,7 @@
 }
 
 .main-page .box:hover {
-    background-color: #f0f8ff;
+    background-color: rgb(5, 171, 226);
 }
 
 .main-page button {
@@ -354,6 +362,10 @@
     border-radius: 42px;
 }
 
+.courses-page .box:hover {
+    background-color: rgb(5, 171, 226);
+}
+
 .courses-page h2 {
     color: blue;
 }
@@ -431,7 +443,7 @@
 }
 
 .notes-page .box:hover {
-    background-color: lightblue;
+    background-color: rgb(5, 171, 226);
 }
 
 .notes-page button {
@@ -503,6 +515,10 @@
     padding: 20px;
     text-align: center;
     border-radius: 42px;
+}
+
+.assignments-page .box:hover {
+    background-color: rgb(5, 171, 226);
 }
 
 .assignments-page button {
@@ -580,6 +596,10 @@
     border-radius: 30px;
 }
 
+.profile-page .box:hover {
+    background-color: rgb(5, 171, 226);
+}
+
 .profile-page .box h3 {
     color: blue;
     text-align: center;
@@ -651,6 +671,10 @@
     margin: 20px auto;
     padding: 20px;
     border-radius: 20px;
+}
+
+.edit-profile-page .box:hover {
+    background-color: rgb(5, 171, 226);
 }
 
 .edit-profile-page label {
@@ -751,7 +775,7 @@
 }
 
 .about-page .box:hover {
-    background-color: #f0f8ff;
+    background-color: rgb(5, 171, 226);
 }
 
 .about-page ul {
@@ -779,4 +803,406 @@
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+}
+
+
+/* =========================================
+   PRACTICAL 4 - JAVASCRIPT UI
+   ========================================= */
+
+
+/* =========================================
+   NOTIFICATION
+   ========================================= */
+
+#notification {
+    display: none;
+    background-color: #1461b3;
+    color: white;
+    padding: 12px;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+#notification button {
+    background-color: white;
+    color: #1461b3;
+    border: none;
+    padding: 7px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MODAL POPUP
+   ========================================= */
+
+#modal {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    z-index: 2000;
+}
+
+.modal-box {
+    background-color: white;
+
+    width: 80%;
+    max-width: 500px;
+
+    margin: 150px auto;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.modal-box button {
+    background-color: #1461b3;
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    margin: 8px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.modal-box button:hover {
+    background-color: #0056b3;
+}
+
+
+/* =========================================
+   CONTENT SLIDER
+   ========================================= */
+
+.slider {
+    width: 80%;
+    max-width: 700px;
+
+    background-color: white;
+
+    margin: 25px auto;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+
+    animation: fadeSlide 0.5s;
+}
+
+.slide-image {
+    background-color: lightblue;
+
+    padding: 40px;
+
+    font-size: 50px;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.slider button {
+    background-color: #1461b3;
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    margin: 10px 5px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.slider button:hover {
+    background-color: #0056b3;
+}
+
+
+/* =========================================
+   SLIDER ANIMATION
+   ========================================= */
+
+@keyframes fadeSlide {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================
+   FAQ
+   ========================================= */
+
+#practical4-faq {
+    margin: 30px auto;
+
+    width: 80%;
+    max-width: 900px;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+#practical4-faq h2 {
+    margin-bottom: 15px;
+}
+
+.question {
+    width: 90%;
+
+    background-color: #1461b3;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    text-align: left;
+}
+
+.question:hover {
+    background-color: #0056b3;
+}
+
+.answer {
+    display: none;
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    padding: 15px;
+
+    background-color: #f2f2f2;
+
+    border-left: 4px solid #1461b3;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+body.dark {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark .box {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark .card {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark .slider {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark #practical4-faq {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark .answer {
+    background-color: #444444;
+    color: white;
+}
+
+body.dark .slide-image {
+    background-color: #444444;
+}
+
+
+/* =========================================
+   DARK MODE BOX AND CARD HOVER
+   ========================================= */
+
+body.dark .home-page .box:hover,
+body.dark .login-page .box:hover,
+body.dark .register-page .box:hover,
+body.dark .main-page .box:hover,
+body.dark .courses-page .box:hover,
+body.dark .notes-page .box:hover,
+body.dark .assignments-page .box:hover,
+body.dark .profile-page .box:hover,
+body.dark .edit-profile-page .box:hover,
+body.dark .about-page .box:hover {
+    background-color: rgb(5, 171, 226) !important;
+}
+
+body.dark .home-page .card:hover,
+body.dark .login-page .card:hover,
+body.dark .register-page .card:hover,
+body.dark .main-page .card:hover,
+body.dark .courses-page .card:hover,
+body.dark .notes-page .card:hover,
+body.dark .assignments-page .card:hover,
+body.dark .profile-page .card:hover,
+body.dark .edit-profile-page .card:hover,
+body.dark .about-page .card:hover {
+    background-color: rgb(5, 171, 226) !important;
+}
+
+
+/* =========================================
+   THEME BUTTON
+   ========================================= */
+
+#themeButton {
+    background-color: white;
+
+    color: #1461b3;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    margin: 8px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#themeButton:hover {
+    background-color: lightblue;
+}
+
+
+/* =========================================
+   HAMBURGER MENU
+   ========================================= */
+
+#menuButton {
+    display: none;
+
+    background-color: white;
+
+    color: #1461b3;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+#menuButton:hover {
+    background-color: lightblue;
+}
+
+
+/* =========================================
+   MOBILE / SMALL SCREEN
+   ========================================= */
+
+@media screen and (max-width: 700px) {
+
+    #menuButton {
+        display: inline-block;
+    }
+
+    nav.mobile-show {
+        display: block;
+    }
+
+    nav.mobile-show a {
+        display: block;
+        margin: 10px;
+    }
+
+    .slider {
+        width: 95%;
+    }
+
+    #practical4-faq {
+        width: 95%;
+    }
+
+    .question {
+        width: 100%;
+    }
+
+    .answer {
+        width: 100%;
+    }
+
+    .modal-box {
+        width: 90%;
+        margin-top: 120px;
+    }
+
 }
