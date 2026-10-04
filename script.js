@@ -1,39 +1,21 @@
-/* =========================================
-   STUDENTHUB - PRACTICAL 4
-   JavaScript DOM Manipulation,
-   Event Handling and UI Interaction
-   ========================================= */
-
-
-/* =========================================
-   PAGE LOAD
-   ========================================= */
+/* PAGE LOAD */
 
 document.addEventListener("DOMContentLoaded", function () {
 
     loadTheme();
-
     createThemeButton();
-
     createNotification();
-
     createModal();
-
     createHamburgerMenu();
-
     createSlider();
-
     createFAQ();
-
     addButtonEvents();
 
 });
 
 
-/* =========================================
-   LIGHT / DARK THEME
-   localStorage
-   ========================================= */
+/* LIGHT / DARK THEME
+   localStorage */
 
 function changeTheme() {
 
@@ -48,6 +30,7 @@ function changeTheme() {
         localStorage.setItem("theme", "light");
 
     }
+
 }
 
 
@@ -64,9 +47,7 @@ function loadTheme() {
 }
 
 
-/* =========================================
-   CREATE THEME BUTTON
-   ========================================= */
+/* CREATE THEME BUTTON */
 
 function createThemeButton() {
 
@@ -77,7 +58,9 @@ function createThemeButton() {
     button.id = "themeButton";
 
     button.onclick = function () {
+
         changeTheme();
+
     };
 
     var header = document.querySelector("header");
@@ -91,29 +74,25 @@ function createThemeButton() {
 }
 
 
-/* =========================================
-   NOTIFICATION BANNER
-   ========================================= */
+/* NOTIFICATION BANNER */
 
 function createNotification() {
 
-    var notification =
-        document.createElement("div");
+    var notification = document.createElement("div");
 
     notification.id = "notification";
 
-    notification.innerHTML =
-        "Welcome to StudentHub!";
+    notification.innerHTML = "Welcome to StudentHub!";
 
-    var closeButton =
-        document.createElement("button");
+    var closeButton = document.createElement("button");
 
     closeButton.innerHTML = "Close";
 
-    closeButton.onclick =
-        function () {
-            closeNotification();
-        };
+    closeButton.onclick = function () {
+
+        closeNotification();
+
+    };
 
     notification.appendChild(closeButton);
 
@@ -153,53 +132,46 @@ function closeNotification() {
 }
 
 
-/* =========================================
-   MODAL POPUP
-   ========================================= */
+/* MODAL POPUP */
 
 function createModal() {
 
-    var modal =
-        document.createElement("div");
+    var modal = document.createElement("div");
 
     modal.id = "modal";
 
-    var modalBox =
-        document.createElement("div");
+    var modalBox = document.createElement("div");
 
     modalBox.className = "modal-box";
 
-    var closeButton =
-        document.createElement("button");
+    var closeButton = document.createElement("button");
 
     closeButton.innerHTML = "X";
 
-    closeButton.onclick =
-        function () {
-            closeModal();
-        };
+    closeButton.onclick = function () {
 
-    var heading =
-        document.createElement("h2");
+        closeModal();
 
-    heading.innerHTML =
-        "🎓 StudentHub Modal";
+    };
 
-    var message =
-        document.createElement("p");
+    var heading = document.createElement("h2");
+
+    heading.innerHTML = "🎓 StudentHub Modal";
+
+    var message = document.createElement("p");
 
     message.innerHTML =
         "This modal popup is created using JavaScript DOM manipulation.";
 
-    var button =
-        document.createElement("button");
+    var button = document.createElement("button");
 
     button.innerHTML = "Close";
 
-    button.onclick =
-        function () {
-            closeModal();
-        };
+    button.onclick = function () {
+
+        closeModal();
+
+    };
 
     modalBox.appendChild(closeButton);
     modalBox.appendChild(heading);
@@ -215,8 +187,7 @@ function createModal() {
 
 function openModal() {
 
-    var modal =
-        document.getElementById("modal");
+    var modal = document.getElementById("modal");
 
     if (modal) {
 
@@ -229,8 +200,7 @@ function openModal() {
 
 function closeModal() {
 
-    var modal =
-        document.getElementById("modal");
+    var modal = document.getElementById("modal");
 
     if (modal) {
 
@@ -241,33 +211,27 @@ function closeModal() {
 }
 
 
-/* =========================================
-   CONTENT SLIDER
-   ========================================= */
+/* CONTENT SLIDER */
 
 var currentSlide = 0;
 
 
 function createSlider() {
 
-    var slider =
-        document.createElement("div");
+    var slider = document.createElement("div");
 
     slider.className = "slider";
 
-    var title =
-        document.createElement("h2");
+    var title = document.createElement("h2");
 
-    title.innerHTML =
-        "🖼 StudentHub Slider";
+    title.innerHTML = "🖼 StudentHub Slider";
 
     slider.appendChild(title);
 
 
     /* Slide 1 */
 
-    var slide1 =
-        document.createElement("div");
+    var slide1 = document.createElement("div");
 
     slide1.className = "slide active";
 
@@ -281,8 +245,7 @@ function createSlider() {
 
     /* Slide 2 */
 
-    var slide2 =
-        document.createElement("div");
+    var slide2 = document.createElement("div");
 
     slide2.className = "slide";
 
@@ -296,8 +259,7 @@ function createSlider() {
 
     /* Slide 3 */
 
-    var slide3 =
-        document.createElement("div");
+    var slide3 = document.createElement("div");
 
     slide3.className = "slide";
 
@@ -314,13 +276,13 @@ function createSlider() {
     var previousButton =
         document.createElement("button");
 
-    previousButton.innerHTML =
-        "Previous";
+    previousButton.innerHTML = "Previous";
 
-    previousButton.onclick =
-        function () {
-            previousSlide();
-        };
+    previousButton.onclick = function () {
+
+        previousSlide();
+
+    };
 
 
     /* Next Button */
@@ -328,16 +290,17 @@ function createSlider() {
     var nextButton =
         document.createElement("button");
 
-    nextButton.innerHTML =
-        "Next";
+    nextButton.innerHTML = "Next";
 
-    nextButton.onclick =
-        function () {
-            nextSlide();
-        };
+    nextButton.onclick = function () {
+
+        nextSlide();
+
+    };
 
 
     slider.appendChild(previousButton);
+
     slider.appendChild(nextButton);
 
 
@@ -389,8 +352,7 @@ function showSlide(number) {
 
     if (number < 0) {
 
-        currentSlide =
-            slides.length - 1;
+        currentSlide = slides.length - 1;
 
     }
 
@@ -411,13 +373,16 @@ function nextSlide() {
 
     }
 
+
     currentSlide++;
+
 
     if (currentSlide >= slides.length) {
 
         currentSlide = 0;
 
     }
+
 
     showSlide(currentSlide);
 
@@ -435,23 +400,23 @@ function previousSlide() {
 
     }
 
+
     currentSlide--;
+
 
     if (currentSlide < 0) {
 
-        currentSlide =
-            slides.length - 1;
+        currentSlide = slides.length - 1;
 
     }
+
 
     showSlide(currentSlide);
 
 }
 
 
-/* =========================================
-   FAQ
-   ========================================= */
+/* FAQ */
 
 function createFAQ() {
 
@@ -463,6 +428,7 @@ function createFAQ() {
     faqSection.className = "box";
 
     faqSection.innerHTML =
+
         "<h2>❓ Frequently Asked Questions</h2>" +
 
         "<button class='question' " +
@@ -548,9 +514,7 @@ function showAnswer(number) {
 }
 
 
-/* =========================================
-   HAMBURGER MENU
-   ========================================= */
+/* HAMBURGER MENU */
 
 function createHamburgerMenu() {
 
@@ -559,6 +523,7 @@ function createHamburgerMenu() {
 
     var nav =
         document.querySelector("nav");
+
 
     if (!header || !nav) {
 
@@ -570,16 +535,15 @@ function createHamburgerMenu() {
     var menuButton =
         document.createElement("button");
 
-    menuButton.innerHTML =
-        "☰ Menu";
+    menuButton.innerHTML = "☰ Menu";
 
-    menuButton.id =
-        "menuButton";
+    menuButton.id = "menuButton";
 
-    menuButton.onclick =
-        function () {
-            showMenu();
-        };
+    menuButton.onclick = function () {
+
+        showMenu();
+
+    };
 
 
     header.appendChild(menuButton);
@@ -601,9 +565,7 @@ function showMenu() {
 }
 
 
-/* =========================================
-   COURSE BUTTONS
-   ========================================= */
+/* COURSE BUTTONS */
 
 function viewCourse(courseName) {
 
@@ -615,9 +577,7 @@ function viewCourse(courseName) {
 }
 
 
-/* =========================================
-   ASSIGNMENT BUTTONS
-   ========================================= */
+/* ASSIGNMENT BUTTONS */
 
 function viewAssignment(assignmentName) {
 
@@ -629,9 +589,7 @@ function viewAssignment(assignmentName) {
 }
 
 
-/* =========================================
-   NOTES BUTTONS
-   ========================================= */
+/* NOTES BUTTONS */
 
 function downloadNote(noteName) {
 
@@ -643,9 +601,7 @@ function downloadNote(noteName) {
 }
 
 
-/* =========================================
-   GENERAL BUTTON EVENTS
-   ========================================= */
+/* GENERAL BUTTON EVENTS */
 
 function addButtonEvents() {
 
@@ -668,5 +624,298 @@ function addButtonEvents() {
         );
 
     }
+
+}
+
+
+/* PRACTICAL 5 - REGISTRATION VALIDATION */
+
+var registerForm =
+    document.getElementById("registerForm");
+
+
+if (registerForm) {
+
+    registerForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+            var valid = true;
+
+
+            /* Get form values */
+
+            var name =
+                document.getElementById("name").value.trim();
+
+            var email =
+                document.getElementById("email").value.trim();
+
+            var mobile =
+                document.getElementById("mobile").value.trim();
+
+            var password =
+                document.getElementById("password").value;
+
+            var confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            var course =
+                document.getElementById("course").value;
+
+            var year =
+                document.getElementById("year").value;
+
+            var gender =
+                document.querySelector(
+                    'input[name="gender"]:checked'
+                );
+
+            var terms =
+                document.getElementById("terms").checked;
+
+
+            /* Clear old errors */
+
+            document.getElementById("nameError").innerHTML = "";
+
+            document.getElementById("emailError").innerHTML = "";
+
+            document.getElementById("mobileError").innerHTML = "";
+
+            document.getElementById("passwordError").innerHTML = "";
+
+            document.getElementById("confirmPasswordError").innerHTML = "";
+
+            document.getElementById("courseError").innerHTML = "";
+
+            document.getElementById("yearError").innerHTML = "";
+
+            document.getElementById("genderError").innerHTML = "";
+
+            document.getElementById("termsError").innerHTML = "";
+
+            document.getElementById("successMessage").innerHTML = "";
+
+
+            /* Name validation */
+
+            var namePattern = /^[A-Za-z ]+$/;
+
+
+            if (name == "") {
+
+                document.getElementById("nameError").innerHTML =
+                    "Name is required.";
+
+                valid = false;
+
+            }
+
+            else if (!namePattern.test(name)) {
+
+                document.getElementById("nameError").innerHTML =
+                    "Name should contain only letters.";
+
+                valid = false;
+
+            }
+
+
+            /* Email validation */
+
+            var emailPattern =
+                /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+
+            if (email == "") {
+
+                document.getElementById("emailError").innerHTML =
+                    "Email is required.";
+
+                valid = false;
+
+            }
+
+            else if (!emailPattern.test(email)) {
+
+                document.getElementById("emailError").innerHTML =
+                    "Enter a valid email address.";
+
+                valid = false;
+
+            }
+
+
+            /* Mobile validation */
+
+            var mobilePattern = /^[0-9]{10}$/;
+
+
+            if (mobile == "") {
+
+                document.getElementById("mobileError").innerHTML =
+                    "Mobile number is required.";
+
+                valid = false;
+
+            }
+
+            else if (!mobilePattern.test(mobile)) {
+
+                document.getElementById("mobileError").innerHTML =
+                    "Enter a valid 10 digit mobile number.";
+
+                valid = false;
+
+            }
+
+
+            /* Password validation */
+
+            if (password == "") {
+
+                document.getElementById("passwordError").innerHTML =
+                    "Password is required.";
+
+                valid = false;
+
+            }
+
+            else if (password.length < 8) {
+
+                document.getElementById("passwordError").innerHTML =
+                    "Password must be at least 8 characters.";
+
+                valid = false;
+
+            }
+
+
+            /* Confirm password */
+
+            if (confirmPassword == "") {
+
+                document.getElementById("confirmPasswordError").innerHTML =
+                    "Please confirm your password.";
+
+                valid = false;
+
+            }
+
+            else if (password != confirmPassword) {
+
+                document.getElementById("confirmPasswordError").innerHTML =
+                    "Passwords do not match.";
+
+                valid = false;
+
+            }
+
+
+            /* Course validation */
+
+            if (course == "") {
+
+                document.getElementById("courseError").innerHTML =
+                    "Please select your course.";
+
+                valid = false;
+
+            }
+
+
+            /* Year validation */
+
+            if (year == "") {
+
+                document.getElementById("yearError").innerHTML =
+                    "Please select your year.";
+
+                valid = false;
+
+            }
+
+
+            /* Gender validation */
+
+            if (!gender) {
+
+                document.getElementById("genderError").innerHTML =
+                    "Please select your gender.";
+
+                valid = false;
+
+            }
+
+
+            /* Terms validation */
+
+            if (!terms) {
+
+                document.getElementById("termsError").innerHTML =
+                    "Please accept the Terms and Conditions.";
+
+                valid = false;
+
+            }
+
+
+            /* Final result */
+
+            if (valid) {
+
+                document.getElementById("successMessage").innerHTML =
+                    "Registration successful!";
+
+            }
+
+        }
+    );
+
+
+    /* PASSWORD STRENGTH */
+
+    document.getElementById("password").addEventListener(
+        "input",
+        function() {
+
+            var password = this.value;
+
+            var strength =
+                document.getElementById("strength");
+
+
+            if (password.length == 0) {
+
+                strength.innerHTML = "";
+
+            }
+
+            else if (password.length < 6) {
+
+                strength.innerHTML =
+                    "Password Strength: Weak";
+
+            }
+
+            else if (password.length < 10) {
+
+                strength.innerHTML =
+                    "Password Strength: Medium";
+
+            }
+
+            else {
+
+                strength.innerHTML =
+                    "Password Strength: Strong";
+
+            }
+
+        }
+    );
 
 }
