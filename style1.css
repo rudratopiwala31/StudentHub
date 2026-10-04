@@ -1,6 +1,4 @@
-/* =========================
-   HOME PAGE
-   ========================= */
+/* HOME PAGE */
 
 .home-page {
     font-family: Arial;
@@ -90,9 +88,7 @@
 }
 
 
-/* =========================
-   LOGIN PAGE
-   ========================= */
+/* LOGIN PAGE */
 
 .login-page {
     font-family: Arial;
@@ -108,7 +104,6 @@
     border: 1px;
     border-radius: 10px;
 }
-
 
 .login-page h1 {
     color: blue;
@@ -145,9 +140,7 @@
 }
 
 
-/* =========================
-   REGISTER PAGE
-   ========================= */
+/* REGISTER PAGE */
 
 .register-page {
     font-family: Arial;
@@ -163,7 +156,6 @@
     border: 1px;
     border-radius: 10px;
 }
-
 
 .register-page h1 {
     color: blue;
@@ -200,9 +192,7 @@
 }
 
 
-/* =========================
-   MAIN PAGE
-   ========================= */
+/* MAIN PAGE */
 
 .main-page {
     font-family: Arial;
@@ -305,9 +295,7 @@
 }
 
 
-/* =========================
-   COURSES PAGE
-   ========================= */
+/* COURSES PAGE */
 
 .courses-page {
     font-family: Arial;
@@ -389,9 +377,7 @@
 }
 
 
-/* =========================
-   NOTES PAGE
-   ========================= */
+/* NOTES PAGE */
 
 .notes-page {
     font-family: Arial;
@@ -460,9 +446,7 @@
 }
 
 
-/* =========================
-   ASSIGNMENTS PAGE
-   ========================= */
+/* ASSIGNMENTS PAGE */
 
 .assignments-page {
     font-family: Arial;
@@ -537,9 +521,7 @@
 }
 
 
-/* =========================
-   PROFILE PAGE
-   ========================= */
+/* PROFILE PAGE */
 
 .profile-page {
     font-family: Arial;
@@ -620,9 +602,7 @@
 }
 
 
-/* =========================
-   EDIT PROFILE PAGE
-   ========================= */
+/* EDIT PROFILE PAGE */
 
 .edit-profile-page {
     font-family: Arial;
@@ -707,9 +687,7 @@
 }
 
 
-/* =========================
-   ABOUT PAGE
-   ========================= */
+/* ABOUT PAGE */
 
 .about-page {
     font-family: Arial;
@@ -800,14 +778,7 @@
 }
 
 
-/* =========================================
-   PRACTICAL 4 - JAVASCRIPT UI
-   ========================================= */
-
-
-/* =========================================
-   NOTIFICATION
-   ========================================= */
+/* NOTIFICATION */
 
 #notification {
     display: none;
@@ -815,12 +786,10 @@
     color: white;
     padding: 12px;
     text-align: center;
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
     z-index: 1000;
 }
 
@@ -835,52 +804,36 @@
 }
 
 
-/* =========================================
-   MODAL POPUP
-   ========================================= */
+/* MODAL POPUP */
 
 #modal {
     display: none;
-
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background-color: rgba(0, 0, 0, 0.6);
-
     z-index: 2000;
 }
 
 .modal-box {
     background-color: white;
-
     width: 80%;
     max-width: 500px;
-
     margin: 150px auto;
-
     padding: 25px;
-
     border-radius: 12px;
-
     text-align: center;
 }
 
 .modal-box button {
     background-color: #1461b3;
     color: white;
-
     border: none;
-
     padding: 10px 18px;
-
     margin: 8px;
-
     border-radius: 5px;
-
     cursor: pointer;
 }
 
@@ -889,24 +842,16 @@
 }
 
 
-/* =========================================
-   CONTENT SLIDER
-   ========================================= */
+/* CONTENT SLIDER */
 
 .slider {
     width: 80%;
     max-width: 700px;
-
     background-color: white;
-
     margin: 25px auto;
-
     padding: 20px;
-
     border-radius: 15px;
-
     text-align: center;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -916,34 +861,24 @@
 
 .slide.active {
     display: block;
-
     animation: fadeSlide 0.5s;
 }
 
 .slide-image {
     background-color: lightblue;
-
     padding: 40px;
-
     font-size: 50px;
-
     border-radius: 10px;
-
     margin-bottom: 15px;
 }
 
 .slider button {
     background-color: #1461b3;
     color: white;
-
     border: none;
-
     padding: 10px 18px;
-
     margin: 10px 5px;
-
     border-radius: 5px;
-
     cursor: pointer;
 }
 
@@ -952,12 +887,9 @@
 }
 
 
-/* =========================================
-   SLIDER ANIMATION
-   ========================================= */
+/* SLIDER ANIMATION */
 
 @keyframes fadeSlide {
-
     from {
         opacity: 0;
     }
@@ -965,28 +897,19 @@
     to {
         opacity: 1;
     }
-
 }
 
 
-/* =========================================
-   FAQ
-   ========================================= */
+/* FAQ */
 
 #practical4-faq {
     margin: 30px auto;
-
     width: 80%;
     max-width: 900px;
-
     background-color: white;
-
     padding: 20px;
-
     border-radius: 15px;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-
     text-align: center;
 }
 
@@ -996,23 +919,14 @@
 
 .question {
     width: 90%;
-
     background-color: #1461b3;
-
     color: white;
-
     border: none;
-
     padding: 12px;
-
     margin-top: 10px;
-
     border-radius: 5px;
-
     cursor: pointer;
-
     font-size: 16px;
-
     text-align: left;
 }
 
@@ -1022,24 +936,16 @@
 
 .answer {
     display: none;
-
     width: 90%;
-
     margin: 0 auto;
-
     padding: 15px;
-
     background-color: #f2f2f2;
-
     border-left: 4px solid #1461b3;
-
     text-align: left;
 }
 
 
-/* =========================================
-   DARK MODE
-   ========================================= */
+/* DARK MODE */
 
 body.dark {
     background-color: #222222;
@@ -1075,11 +981,6 @@ body.dark .slide-image {
     background-color: #444444;
 }
 
-
-/* =========================================
-   DARK MODE BOX AND CARD HOVER
-   ========================================= */
-
 body.dark .home-page .box:hover,
 body.dark .main-page .box:hover,
 body.dark .courses-page .box:hover,
@@ -1105,23 +1006,15 @@ body.dark .about-page .card:hover {
 }
 
 
-/* =========================================
-   THEME BUTTON
-   ========================================= */
+/* THEME BUTTON */
 
 #themeButton {
     background-color: white;
-
     color: #1461b3;
-
     border: none;
-
     padding: 8px 15px;
-
     margin: 8px;
-
     border-radius: 5px;
-
     cursor: pointer;
 }
 
@@ -1130,25 +1023,16 @@ body.dark .about-page .card:hover {
 }
 
 
-/* =========================================
-   HAMBURGER MENU
-   ========================================= */
+/* HAMBURGER MENU */
 
 #menuButton {
     display: none;
-
     background-color: white;
-
     color: #1461b3;
-
     border: none;
-
     padding: 8px 15px;
-
     border-radius: 5px;
-
     cursor: pointer;
-
     font-size: 16px;
 }
 
@@ -1157,9 +1041,7 @@ body.dark .about-page .card:hover {
 }
 
 
-/* =========================================
-   MOBILE / SMALL SCREEN
-   ========================================= */
+/* MOBILE */
 
 @media screen and (max-width: 700px) {
 
@@ -1196,12 +1078,10 @@ body.dark .about-page .card:hover {
         width: 90%;
         margin-top: 120px;
     }
-
 }
 
-/* =========================================
-   PRACTICAL 5 - REGISTRATION VALIDATION
-   ========================================= */
+
+/* PRACTICAL 5 */
 
 .register-page label {
     display: block;
