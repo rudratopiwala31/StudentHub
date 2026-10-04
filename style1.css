@@ -109,9 +109,6 @@
     border-radius: 10px;
 }
 
-.login-page .box:hover {
-    background-color: rgb(5, 171, 226);
-}
 
 .login-page h1 {
     color: blue;
@@ -167,9 +164,6 @@
     border-radius: 10px;
 }
 
-.register-page .box:hover {
-    background-color: rgb(5, 171, 226);
-}
 
 .register-page h1 {
     color: blue;
@@ -1087,8 +1081,6 @@ body.dark .slide-image {
    ========================================= */
 
 body.dark .home-page .box:hover,
-body.dark .login-page .box:hover,
-body.dark .register-page .box:hover,
 body.dark .main-page .box:hover,
 body.dark .courses-page .box:hover,
 body.dark .notes-page .box:hover,
@@ -1205,4 +1197,68 @@ body.dark .about-page .card:hover {
         margin-top: 120px;
     }
 
+}
+
+/* =========================================
+   PRACTICAL 5 - REGISTRATION VALIDATION
+   ========================================= */
+
+.register-page label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.register-page select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.register-page .gender {
+    text-align: left;
+}
+
+.register-page .gender input {
+    width: auto;
+    margin: 5px;
+}
+
+.register-page .gender label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.register-page .terms {
+    text-align: left;
+}
+
+.register-page .terms input {
+    width: auto;
+}
+
+.register-page .terms label {
+    display: inline;
+    font-weight: normal;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+#strength {
+    text-align: left;
+    font-size: 13px;
+    margin: 5px 0;
 }
