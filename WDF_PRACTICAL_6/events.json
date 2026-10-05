@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Tech Fest",
+        "date": "10 October 2026",
+        "venue": "CHARUSAT Box",
+        "category": "Technical"
+    },
+    {
+        "name": "Coding Competition",
+        "date": "12 October 2026",
+        "venue": "Computer Lab",
+        "category": "Technical"
+    },
+    {
+        "name": "Sports Day",
+        "date": "15 October 2026",
+        "venue": "CHARUSAT Ground",
+        "category": "Sports"
+    },
+    {
+        "name": "Web Development Workshop",
+        "date": "18 October 2026",
+        "venue": "Seminar Hall",
+        "category": "Workshop"
+    },
+    {
+        "name": "Cultural Fest",
+        "date": "20 October 2026",
+        "venue": "Main Auditorium",
+        "category": "Cultural"
+    },
+    {
+        "name": "Hackathon",
+        "date": "22 October 2026",
+        "venue": "Innovation Lab",
+        "category": "Technical"
+    },
+    {
+        "name": "Photography Competition",
+        "date": "24 October 2026",
+        "venue": "Activity Hall",
+        "category": "Cultural"
+    },
+    {
+        "name": "Java Programming Workshop",
+        "date": "26 October 2026",
+        "venue": "Computer Lab",
+        "category": "Workshop"
+    },
+    {
+        "name": "Football Tournament",
+        "date": "28 October 2026",
+        "venue": "Sports Ground",
+        "category": "Sports"
+    },
+    {
+        "name": "AI Seminar",
+        "date": "30 October 2026",
+        "venue": "Seminar Hall",
+        "category": "Technical"
+    },
+    {
+        "name": "Dance Competition",
+        "date": "2 November 2026",
+        "venue": "Main Auditorium",
+        "category": "Cultural"
+    },
+    {
+        "name": "Cyber Security Workshop",
+        "date": "4 November 2026",
+        "venue": "Computer Lab",
+        "category": "Workshop"
+    },
+    {
+        "name": "Cricket Tournament",
+        "date": "6 November 2026",
+        "venue": "CHARUSAT Ground",
+        "category": "Sports"
+    },
+    {
+        "name": "Project Exhibition",
+        "date": "8 November 2026",
+        "venue": "Exhibition Hall",
+        "category": "Technical"
+    },
+    {
+        "name": "Music Competition",
+        "date": "10 November 2026",
+        "venue": "Main Auditorium",
+        "category": "Cultural"
+    }
+]

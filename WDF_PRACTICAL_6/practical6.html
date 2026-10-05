@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>StudentHub - Practical 6</title>
+
+    <link rel="stylesheet" href="practical6.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="main-box">
+
+            <h1>StudentHub Data</h1>
+
+            <p class="subtitle">
+                Practical 6 - Rendering External JSON Data using Fetch API
+            </p>
+
+            <div class="buttons">
+
+                <button onclick="loadData('events.json', 'events')">
+                    Events
+                </button>
+
+                <button onclick="loadData('students.json', 'students')">
+                    Students
+                </button>
+
+                <button onclick="loadData('faqs.json', 'faqs')">
+                    FAQs
+                </button>
+
+            </div>
+
+            <div class="controls">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search..."
+                    onkeyup="showData()"
+                >
+
+                <select id="filter" onchange="showData()">
+
+                    <option value="All">
+                        All
+                    </option>
+
+                </select>
+
+
+                <select id="sort" onchange="showData()">
+
+                    <option value="none">
+                        Sort By
+                    </option>
+
+                    <option value="name">
+                        Name A-Z
+                    </option>
+
+                    <option value="nameReverse">
+                        Name Z-A
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div id="loading"></div>
+
+            <div id="error"></div>
+
+            <div id="dataContainer"></div>
+
+            <div class="pagination">
+
+                <button onclick="previousPage()">
+                    Previous
+                </button>
+
+                <span id="pageNumber">
+                    Page 1
+                </span>
+
+                <button onclick="nextPage()">
+                    Next
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="practical6.js"></script>
+
+</body>
+
+</html>

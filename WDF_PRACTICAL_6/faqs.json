@@ -1,0 +1,92 @@
+[
+    {
+        "name": "FAQ 1",
+        "question": "What is StudentHub?",
+        "answer": "StudentHub is a portal for managing student information and academic activities.",
+        "category": "General"
+    },
+    {
+        "name": "FAQ 2",
+        "question": "How can I register?",
+        "answer": "Open the registration page and fill in all the required details.",
+        "category": "Account"
+    },
+    {
+        "name": "FAQ 3",
+        "question": "How can I login?",
+        "answer": "Enter your registered email and password on the login page.",
+        "category": "Account"
+    },
+    {
+        "name": "FAQ 4",
+        "question": "Where can I find my courses?",
+        "answer": "You can find your courses from the Courses section.",
+        "category": "Courses"
+    },
+    {
+        "name": "FAQ 5",
+        "question": "How can I view assignments?",
+        "answer": "Open the Assignments section from the StudentHub menu.",
+        "category": "Assignments"
+    },
+    {
+        "name": "FAQ 6",
+        "question": "Can I view my notes?",
+        "answer": "Yes, notes can be viewed from the Notes section.",
+        "category": "Notes"
+    },
+    {
+        "name": "FAQ 7",
+        "question": "How can I update my profile?",
+        "answer": "Open your Profile page and update the required information.",
+        "category": "Account"
+    },
+    {
+        "name": "FAQ 8",
+        "question": "Can I search student information?",
+        "answer": "Yes, student information can be searched using the search option.",
+        "category": "Students"
+    },
+    {
+        "name": "FAQ 9",
+        "question": "Can I filter student records?",
+        "answer": "Yes, student records can be filtered according to the course.",
+        "category": "Students"
+    },
+    {
+        "name": "FAQ 10",
+        "question": "Can I sort the data?",
+        "answer": "Yes, the data can be sorted by name.",
+        "category": "Data"
+    },
+    {
+        "name": "FAQ 11",
+        "question": "What is JSON?",
+        "answer": "JSON is a simple format used for storing and exchanging data.",
+        "category": "Technical"
+    },
+    {
+        "name": "FAQ 12",
+        "question": "What is Fetch API?",
+        "answer": "Fetch API is used to request and load data from files or servers.",
+        "category": "Technical"
+    },
+    {
+        "name": "FAQ 13",
+        "question": "Can I view college events?",
+        "answer": "Yes, upcoming college events can be displayed in the Events section.",
+        "category": "Events"
+    },
+    {
+        "name": "FAQ 14",
+        "question": "How many records are displayed on one page?",
+        "answer": "Five records are displayed on one page.",
+        "category": "Data"
+    },
+    {
+        "name": "FAQ 15",
+        "question": "What happens if JSON data cannot be loaded?",
+        "answer": "An error message is displayed to the user.",
+        "category": "Technical"
+    }
+]

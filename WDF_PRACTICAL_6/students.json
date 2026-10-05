@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Aarav Patel",
+        "rollNo": "CE001",
+        "course": "Computer Engineering",
+        "year": "2nd Year",
+        "email": "aarav@example.com"
+    },
+    {
+        "name": "Riya Shah",
+        "rollNo": "CE002",
+        "course": "Computer Engineering",
+        "year": "2nd Year",
+        "email": "riya@example.com"
+    },
+    {
+        "name": "Dev Mehta",
+        "rollNo": "IT003",
+        "course": "Information Technology",
+        "year": "2nd Year",
+        "email": "dev@example.com"
+    },
+    {
+        "name": "Anaya Desai",
+        "rollNo": "CE004",
+        "course": "Computer Engineering",
+        "year": "3rd Year",
+        "email": "anaya@example.com"
+    },
+    {
+        "name": "Kabir Joshi",
+        "rollNo": "IT005",
+        "course": "Information Technology",
+        "year": "3rd Year",
+        "email": "kabir@example.com"
+    },
+    {
+        "name": "Ishita Mehta",
+        "rollNo": "DS006",
+        "course": "Data Science",
+        "year": "2nd Year",
+        "email": "ishita@example.com"
+    },
+    {
+        "name": "Vivaan Patel",
+        "rollNo": "CE007",
+        "course": "Computer Engineering",
+        "year": "1st Year",
+        "email": "vivaan@example.com"
+    },
+    {
+        "name": "Myra Shah",
+        "rollNo": "DS008",
+        "course": "Data Science",
+        "year": "2nd Year",
+        "email": "myra@example.com"
+    },
+    {
+        "name": "Arjun Desai",
+        "rollNo": "IT009",
+        "course": "Information Technology",
+        "year": "1st Year",
+        "email": "arjun@example.com"
+    },
+    {
+        "name": "Kiara Patel",
+        "rollNo": "CE010",
+        "course": "Computer Engineering",
+        "year": "3rd Year",
+        "email": "kiara@example.com"
+    },
+    {
+        "name": "Reyansh Shah",
+        "rollNo": "DS011",
+        "course": "Data Science",
+        "year": "1st Year",
+        "email": "reyansh@example.com"
+    },
+    {
+        "name": "Sara Mehta",
+        "rollNo": "IT012",
+        "course": "Information Technology",
+        "year": "2nd Year",
+        "email": "sara@example.com"
+    },
+    {
+        "name": "Dhruv Joshi",
+        "rollNo": "CE013",
+        "course": "Computer Engineering",
+        "year": "2nd Year",
+        "email": "dhruv@example.com"
+    },
+    {
+        "name": "Aanya Desai",
+        "rollNo": "DS014",
+        "course": "Data Science",
+        "year": "3rd Year",
+        "email": "aanya@example.com"
+    },
+    {
+        "name": "Yash Patel",
+        "rollNo": "IT015",
+        "course": "Information Technology",
+        "year": "3rd Year",
+        "email": "yash@example.com"
+    }
+]
